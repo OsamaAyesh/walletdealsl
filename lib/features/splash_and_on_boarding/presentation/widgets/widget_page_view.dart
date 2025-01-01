@@ -34,6 +34,7 @@ class WidgetPageView extends StatelessWidget {
             ),
             textAlign: TextAlign.center,
             maxLines: 1,
+            overflow: TextOverflow.ellipsis,
           ),
         ),
         SizedBox(height: ScreenUtilNew.height(8),),
@@ -47,9 +48,10 @@ class WidgetPageView extends StatelessWidget {
               color: Colors.black,
             ),
             textAlign: TextAlign.center,
+            maxLines: 2,
+            overflow: TextOverflow.ellipsis,
           ),
         ),
-
       ],
     );
   }

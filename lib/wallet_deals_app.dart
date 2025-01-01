@@ -17,7 +17,8 @@ class WalletDealsApp extends StatelessWidget {
       splitScreenMode: true,
       builder: (context, child) {
         return MaterialApp(
-          locale: DevicePreview.locale(context), // أو Locale("en")
+          // locale: DevicePreview.locale(context), // أو Locale("en")
+          locale: Locale("ar"), // أو Locale("en")
           builder: DevicePreview.appBuilder,
           localizationsDelegates: const [
             AppLocalizations.delegate,

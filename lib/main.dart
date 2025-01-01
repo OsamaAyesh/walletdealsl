@@ -4,8 +4,11 @@ import 'package:flutter/services.dart';
 import 'package:walletdeals/wallet_deals_app.dart';
 import 'package:device_preview/device_preview.dart';
 
-void main() {
+import 'core/services/shared_pref_controller.dart';
+
+void main() async{
   WidgetsFlutterBinding.ensureInitialized();
+  await SharedPrefController().initPreferences();
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,  // الوضع العمودي العادي
     DeviceOrientation.portraitDown, // الوضع العمودي المقلوب

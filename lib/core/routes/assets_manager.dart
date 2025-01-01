@@ -9,8 +9,15 @@ class AssetsManager {
   static const String onBoardingImage2="$basePath/on_boarding_image2.png";
   static const String onBoardingImage3="$basePath/on_boarding_image3.png";
 
+   //Error Handler Images
+  static const String successAnimation="$basePath/success_animation.gif";
+  static const String errorAnimationImage="$basePath/error_animation.gif";
+  //OTP
+  static const String vertified = "$basePath/vertified.svg";
+  static const String phoneMessage = "$basePath/phone_message.svg";
 
   //Error Images
   static const String errorInternetImage="$basePath/error_internet.png";
+
 
 }

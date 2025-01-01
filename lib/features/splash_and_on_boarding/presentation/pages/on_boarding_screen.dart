@@ -5,6 +5,7 @@ import 'package:walletdeals/core/routes/assets_manager.dart';
 import 'package:walletdeals/core/utils/context_extension.dart';
 
 import '../../../../config/theme/colors.dart';
+import '../../../../core/routes/app_routes.dart';
 import '../../../../core/utils/screen_util_new.dart';
 import '../widgets/widget_page_view.dart';
 
@@ -83,7 +84,6 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
             children: _buildPageViewChildren(),
           ),
         ),
-        SizedBox(height: ScreenUtilNew.height(105)),
         _buildPageIndicator(),
         SizedBox(height: ScreenUtilNew.height(36)),
         _buildNextButton(),
@@ -193,8 +193,8 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
         curve: Curves.easeInOut,
       );
     } else {
-      print("navigator to login screen");
-      // Navigator.pushReplacementNamed(context, Routes.loginScreen);
+    print("Navigate To Login Screen");
+      Navigator.pushReplacementNamed(context, AppRoutes.loginScreenRoute);
     }
   }
 }
